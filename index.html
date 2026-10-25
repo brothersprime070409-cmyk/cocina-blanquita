@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cocina Blanquita | Comida casera en Tuxtla Gutiérrez</title>
+<style>
+:root{
+  --bg:#FAF5EC;--surface:#fff;--ink:#223939;--muted:#6B7070;--line:#E6DEC8;
+  --accent:#B9862E;--on-accent:#fff;--star:#D9A441;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px;}
+a{color:inherit;}
+
+header.hero{padding:90px 0 70px;text-align:center;background:var(--ink);color:#fff;}
+.kicker{color:var(--star);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;margin:0 0 16px;}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:0 0 16px;letter-spacing:-.015em;}
+header.hero p{color:#CFE0E0;max-width:32em;margin:0 auto 28px;font-size:1.05rem;}
+.cta{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:700;padding:14px 30px;border-radius:6px;text-decoration:none;}
+
+section{padding:60px 0;border-bottom:1px solid var(--line);}
+h2{font-size:clamp(1.5rem,4vw,2rem);text-align:center;margin:0 0 10px;}
+.lead{color:var(--muted);text-align:center;max-width:32em;margin:0 auto 40px;}
+
+.menu-group{margin-bottom:36px;}
+.menu-group h3{font-size:1.1rem;color:var(--accent);border-bottom:2px solid var(--line);padding-bottom:8px;margin:0 0 14px;}
+.menu-item{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);}
+.menu-item:last-child{border-bottom:none;}
+.menu-item .name{font-weight:600;}
+.menu-item .desc{color:var(--muted);font-size:.9rem;display:block;}
+.menu-item .price{font-weight:700;color:var(--accent);white-space:nowrap;}
+
+.reviews-box{max-width:520px;margin:0 auto;}
+.stars-pick{display:flex;gap:6px;justify-content:center;margin-bottom:16px;}
+.stars-pick input{display:none;}
+.stars-pick label{font-size:2rem;color:var(--line);cursor:pointer;}
+.stars-pick input:checked ~ label,
+.stars-pick label:hover,
+.stars-pick label:hover ~ label{color:var(--star);}
+.stars-pick{flex-direction:row-reverse;}
+form.review{display:flex;flex-direction:column;gap:14px;}
+input[type=text],textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;}
+textarea{resize:vertical;min-height:90px;}
+.submit{background:var(--accent);color:var(--on-accent);border:none;border-radius:8px;padding:13px;font-weight:700;font:inherit;cursor:pointer;}
+.review-list{list-style:none;margin:34px 0 0;padding:0;}
+.review-list li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:12px;}
+.review-list .who{font-weight:700;}
+.review-list .stars{color:var(--star);letter-spacing:2px;}
+
+iframe{width:100%;height:320px;border:0;border-radius:10px;}
+.info{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;justify-content:center;text-align:center;}
+.info div{flex:1 1 200px;}
+.info h4{margin:0 0 4px;font-size:.95rem;color:var(--accent);}
+.info p{margin:0;color:var(--muted);font-size:.92rem;}
+
+.whats{text-align:center;margin-top:10px;}
+.whats a{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:700;padding:13px 26px;border-radius:8px;text-decoration:none;}
+
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:.85rem;}
+@media(max-width:600px){.menu-item{flex-direction:column;gap:2px;}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Cocina Blanquita · Tuxtla Gutiérrez</p>
+    <h1>Comida de casa, servida con el cuidado de un buen restaurante</h1>
+    <p>Recetas familiares, ingredientes frescos y un servicio pensado para que confíes en cada platillo que pides.</p>
+    <a class="cta" href="#menu">Ver el menú</a>
+  </div>
+</header>
+
+<section id="menu"><div class="wrap">
+  <h2>Nuestro menú</h2>
+  <p class="lead">Platillos de siempre, preparados como en casa.</p>
+
+  <div class="menu-group">
+    <h3>Platillos fuertes</h3>
+    <div class="menu-item"><span><span class="name">Milanesa de res</span><span class="desc">Con arroz, frijoles y ensalada</span></span><span class="price">$75</span></div>
+    <div class="menu-item"><span><span class="name">Bistec a la mexicana</span><span class="desc">Con tortillas hechas a mano</span></span><span class="price">$70</span></div>
+    <div class="menu-item"><span><span class="name">Pollo guisado</span><span class="desc">En salsa de jitomate casera</span></span><span class="price">$65</span></div>
+    <div class="menu-item"><span><span class="name">Chile relleno</span><span class="desc">Relleno de queso, con caldillo</span></span><span class="price">$60</span></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>Aguas frescas</h3>
+    <div class="menu-item"><span class="name">Agua de jamaica</span><span class="price">$18</span></div>
+    <div class="menu-item"><span class="name">Agua de horchata</span><span class="price">$18</span></div>
+    <div class="menu-item"><span class="name">Agua de limón</span><span class="price">$15</span></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>Pozol</h3>
+    <div class="menu-item"><span><span class="name">Pozol blanco</span><span class="desc">Tradicional, sin azúcar</span></span><span class="price">$20</span></div>
+    <div class="menu-item"><span><span class="name">Pozol de cacao</span><span class="desc">Con cacao molido en casa</span></span><span class="price">$25</span></div>
+  </div>
+</div></section>
+
+<section id="opiniones"><div class="wrap">
+  <h2>Opiniones de nuestros clientes</h2>
+  <p class="lead">Cuéntanos qué te pareció tu visita.</p>
+  <div class="reviews-box">
+    <form class="review" id="reviewForm">
+      <div class="stars-pick" id="starsPick">
+        <input type="radio" name="rating" id="r5" value="5"><label for="r5">★</label>
+        <input type="radio" name="rating" id="r4" value="4"><label for="r4">★</label>
+        <input type="radio" name="rating" id="r3" value="3"><label for="r3">★</label>
+        <input type="radio" name="rating" id="r2" value="2"><label for="r2">★</label>
+        <input type="radio" name="rating" id="r1" value="1"><label for="r1">★</label>
+      </div>
+      <input type="text" id="revName" placeholder="Tu nombre" required>
+      <textarea id="revText" placeholder="Cuéntanos tu experiencia" required></textarea>
+      <button class="submit" type="submit">Enviar opinión</button>
+    </form>
+    <ul class="review-list" id="reviewList">
+      <li><span class="who">Rosa M.</span> — <span class="stars">★★★★★</span><p>La milanesa sabe igual que la de mi abuela. Vamos seguido.</p></li>
+      <li><span class="who">Diego H.</span> — <span class="stars">★★★★☆</span><p>Muy buen servicio y el pozol de cacao es excelente.</p></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="ubicacion"><div class="wrap">
+  <h2>Encuéntranos</h2>
+  <p class="lead">Te esperamos en nuestro local.</p>
+  <iframe src="https://www.google.com/maps?q=Tuxtla%20Gutierrez%20Chiapas%20centro&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="info">
+    <div><h4>Dirección</h4><p>Calle Palma Areca 409, Tuxtla Gutiérrez, Chiapas</p></div>
+    <div><h4>Horario</h4><p>Lunes a domingo, 8am a 6pm</p></div>
+  </div>
+</div></section>
+
+<section id="pedidos" style="border-bottom:none;"><div class="wrap">
+  <h2>¿Ya se te antojó?</h2>
+  <p class="lead">Haz tu pedido directo por WhatsApp.</p>
+  <div class="whats">
+    <a href="https://wa.me/529611340680?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">✆ Pedir por WhatsApp</a>
+  </div>
+</div></section>
+
+<footer>Cocina Blanquita &copy; 2026</footer>
+
+<script>
+document.getElementById("reviewForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var rating = document.querySelector('input[name="rating"]:checked');
+  var name = document.getElementById("revName").value.trim();
+  var text = document.getElementById("revText").value.trim();
+  if(!rating || !name || !text) return;
+  var stars = "★".repeat(Number(rating.value)) + "☆".repeat(5-Number(rating.value));
+  var li = document.createElement("li");
+  li.innerHTML = '<span class="who"></span> — <span class="stars"></span><p></p>';
+  li.querySelector(".who").textContent = name;
+  li.querySelector(".stars").textContent = stars;
+  li.querySelector("p").textContent = text;
+  document.getElementById("reviewList").prepend(li);
+  this.reset();
+});
+</script>
+
+</body>
+</html>
